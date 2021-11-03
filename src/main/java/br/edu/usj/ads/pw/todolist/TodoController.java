@@ -18,7 +18,7 @@ public class TodoController {
     @PostMapping(value="/add")
     public ModelAndView postAdd(@RequestParam String todo) {
         list.add(todo);
-        System.out.println(todo);
+    
         ModelAndView modelAndview = new ModelAndView("index");
         modelAndview.addObject("todo_list", list);
         return modelAndview;    }

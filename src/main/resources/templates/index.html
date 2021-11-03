@@ -18,9 +18,7 @@
     </div>
     <div>
         <ul>
-            <Li>Tarefa 1:</Li>
-            <Li>Tarefa 2:</Li>
-            <Li>Tarefa 3:</Li>
+            <li th:each="item : ${todo_list}"  th:text="${item}"></li>
         </ul>
     </div>
 </body>
