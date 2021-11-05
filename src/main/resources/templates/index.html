@@ -18,7 +18,7 @@
     </div>
     <div>
         <ul>
-            <li th:each="item : ${todo_list}"  th:text="${item}"></li>
+            <li th:each="item : ${todo_list}"  th:text="${item.description}"></li>
         </ul>
     </div>
 </body>
